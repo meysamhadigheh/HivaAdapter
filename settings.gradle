@@ -1,0 +1,3 @@
+rootProject.name='HivaAdapterTest'
+include ':app'
+include ':hivaadapter'
