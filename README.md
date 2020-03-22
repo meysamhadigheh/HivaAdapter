@@ -178,7 +178,7 @@ class Model implements ItemBinder{
 }
 ```
 
-now just make an object from SURAdapter and feed it with your model and set it to recyclerView as adapter.
+now just make an object from HivaAdapter and feed it with your model and set it to recyclerView as adapter.
 
 ```java
         ArrayList items = new ArrayList();
@@ -189,7 +189,7 @@ now just make an object from SURAdapter and feed it with your model and set it t
         items.add(new Model("model #4", 3, R.drawable.success));
         items.add(new Model("model #5", 5, R.drawable.warning));
 
-        SURAdapter adapter = new SURAdapter(items);
+        HivaAdapter adapter = new HivaAdapter(items);
         RecyclerView recyclerView = findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(adapter);
